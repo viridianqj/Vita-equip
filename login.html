@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vita Equip - Iniciar Sesión</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado" > 
+    <div class="logo"><a class = "logo-e" href="index.html" class="logo"> <img src="img/logo.png" alt="Logo" class="logo-img"></a>  </div>
+    <nav class="nav">
+      <a class = "element-inicio" href="index.html">Inicio</a>
+      <a class = "element-inicio" href="productos.html">Productos</a>
+      <a class = "element-inicio" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="login-container">
+    <div class="form-toggle">
+      <button id="btnLogin" class="activo">Iniciar Sesión</button>
+      <button id="btnRegistro">Registrarse</button>
+    </div>
+
+    <form id="formLogin" class="formulario">
+      <h2>Iniciar Sesión</h2>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+
+    <form id="formRegistro" class="formulario oculto">
+      <h2>Crear Cuenta</h2>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <script>
+    const btnLogin = document.getElementById("btnLogin");
+    const btnRegistro = document.getElementById("btnRegistro");
+    const formLogin = document.getElementById("formLogin");
+    const formRegistro = document.getElementById("formRegistro");
+
+    btnLogin.addEventListener("click", () => {
+      formLogin.classList.remove("oculto");
+      formRegistro.classList.add("oculto");
+      btnLogin.classList.add("activo");
+      btnRegistro.classList.remove("activo");
+    });
+
+    btnRegistro.addEventListener("click", () => {
+      formRegistro.classList.remove("oculto");
+      formLogin.classList.add("oculto");
+      btnRegistro.classList.add("activo");
+      btnLogin.classList.remove("activo");
+    });
+  </script> 
+
+  <footer class="footer">
+    <p>&copy; 2025 Vita Equip. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

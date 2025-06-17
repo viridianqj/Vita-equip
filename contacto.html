@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vita Equip - Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado" > 
+    <div class="logo"><a class = "logo-e" href="index.html" class="logo"> <img src="img/logo.png" alt="Logo" class="logo-img"></a>  </div>
+    <nav class="nav">
+      <a class = "element-inicio" href="index.html">Inicio</a>
+      <a class = "element-inicio" href="productos.html">Productos</a>
+      <a class = "element-inicio" href="contacto.html">Contacto</a>
+      <a class = "element-inicio" href="login.html" class="login-btn">Login / Registro</a>
+    </nav>
+  </header>
+
+ <section class="info-contacto">
+  <div class="tarjeta-info">
+    <h3>Instalaciones</h3>
+    <p>Cra 7 #36-27,<br>Riohacha - La Guajira</p>
+  </div>
+  <div class="tarjeta-info">
+    <h3>Envíanos un mensaje</h3>
+    <p>(+57) 322 384 8718<br>VitaEquip@gmail.com</p>
+  </div>
+  <div class="tarjeta-info">
+    <h3>Horario</h3>
+    <p>Lun - Vie: 9:00 am - 5:00 pm<br>Sáb: 9:00 am - 12:00 pm</p>
+  </div>
+</section>
+
+<section class="contacto">
+  <h2>Contáctanos</h2>
+  <p class="subtitulo">Déjanos un mensaje. Nos comunicaremos con usted dentro de días hábiles.</p>
+  <form id="formContacto">
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="email" id="correo" placeholder="Correo electrónico" required />
+    <input type="text" id="titulo" placeholder="Título" required />
+    <textarea id="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
+</section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Vita Equip. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("formContacto").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("¡Gracias por contactarnos! Te responderemos pronto.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

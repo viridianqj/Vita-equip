@@ -1,0 +1,651 @@
+.nosotros {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.nosotros h2 {
+  font-size: 2rem;
+  color:#444;
+  margin-bottom: 30px;
+}
+
+.nosotros-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.nosotros-contenido img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.nosotros-texto {
+  text-align: left;
+  max-width: 500px;
+}
+
+.nosotros-texto h3 {
+  color: #007c79;
+  margin-top: 20px;
+}
+
+.nosotros-texto p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+.contacto {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #007c79;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+form .campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn-enviar {
+  background-color: #007c79;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-enviar:hover {
+  background-color: #005f5c;
+}
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario h2 {
+  color: #007c79;
+  margin-bottom: 10px;
+}
+
+.formulario input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.formulario button {
+  background-color: #007c79;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.formulario button:hover {
+  background-color: #005f5c;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.form-toggle button.activo {
+  background-color: #007c79;
+  color: white;
+}
+
+.oculto {
+  display: none;
+}
+:root {
+  --primario: #007c79;
+  --primario-oscuro: #005f5c;
+  --texto: #333;
+  --fondo: #f4f7fa;
+  --blanco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+header {
+  background-color: var(--blanco);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  color: var(--primario);
+  font-size: 1.8rem;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 500;
+}
+
+.hero {
+  background: url('img/fondo-busqueda.jpg') center/cover no-repeat;
+  color: var(--blanco);
+  padding: 100px 20px 40px;
+  text-align: center;
+}
+
+.hero h1 {
+  color :#2824241a;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.buscar-input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: var(--primario-oscuro);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #004d4a;
+}
+
+.banner-anuncio {
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--blanco);
+}
+
+.banner-anuncio img {
+  width: 300px;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+.banner-anuncio .contenido {
+  max-width: 500px;
+  text-align: center;
+}
+
+.banner-anuncio .contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primario);
+}
+
+.banner-anuncio .contenido a {
+  text-decoration: none;
+  background-color: var(--primario);
+  color: var(--blanco);
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.quienes-somos {
+  background-color: var(--fondo);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.quienes-somos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primario);
+}
+
+.quienes-somos p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.productos {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primario);
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  width: 200px !important; /* <--- FORZAMOS un ancho más delgado */
+  height: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .tarjeta {
+    width: calc(33.33% - 20px); /* 3 por fila en tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .tarjeta {
+    width: calc(50% - 20px); /* 2 por fila en móviles medianos */
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjeta {
+    width: 100%; /* 1 por fila en móviles pequeños */
+  }
+}
+.producto h3 {
+  color: var(--primario);
+  font-size: 16px;
+  min-height: 48px; 
+  margin: 10px 0;
+}
+
+.tarjeta p {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  min-height: 60px;
+  color: #555;
+}
+
+.tarjeta strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #000;
+  margin-top: auto;
+}
+.productos-nuevos{
+  padding : 50px 20px;
+  text-align : center;
+  margin: 10px 0 10px 0;
+}
+.compra{
+  padding : 50px 20px;
+  text-align : center;
+  margin: 10px 0 10px 0;
+}
+.hero-overlay h1{
+  color: #383a3a;
+}
+.hero {
+  position: relative;
+  background: url(.//img/banner.png) no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.hero-overlay {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: none;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.barra-busqueda {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #d7f3f7;
+  border: 2px solid #a1cfd9;
+}
+
+.barra-busqueda input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+}
+
+.barra-busqueda button {
+  background-color: transparent;
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #444;
+}
+
+.barra-busqueda button:hover {
+  color: #80c3c2;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  width: calc(25% - 20px); /* 4 por fila */
+  height: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.tarjeta img {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.tarjeta h3 {
+  font-size: 16px;
+  min-height: 40px;   
+  margin: 10px 0 5px;
+}
+
+.tarjeta p {
+  flex-grow: 1;    
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.tarjeta strong {
+  color: #0f8a7b;
+  font-weight: bold;
+}
+
+.tarjeta button {
+  background-color: #28a79a;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f9f6;
+  background-image: url('img/fondo-medico.png');
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.info-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px 20px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-info {
+  background-color: #e5f5fb;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tarjeta-info h3 {
+  color: #0f8a7b;
+  margin-bottom: 10px;
+}
+
+.contacto {
+  text-align: center;
+  padding: 20px;
+}
+
+.contacto h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contacto .subtitulo {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn-enviar {
+  background-color: #0f8a7b;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #ffffff;
+}
+
+.element-inicio:hover{
+color : #ffffff;
+
+}
+
+.encabezado {
+  background-color: #006D75;
+  padding: 10px 20px;
+}
+
+.barra-busq {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 0 10px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #d7f3f7;
+  border: 2px solid #a1cfd9;
+}
+
+.barra-busq input {
+  flex: 1;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;    
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+}
+
+.barra-busq button {
+  background-color: transparent;
+  border: none;
+  padding: 0 1rem;      
+  font-size: 1rem;
+  cursor: pointer;
+  color: #444;
+}
+
+.barra-busq button:hover {
+  color: #80c3c2;
+}
+
+.categorias-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #f8f5e8;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.categorias-menu a {
+  text-decoration: none;
+  color: #068581;
+  font-weight: bold;
+  border: 1px solid #068581;
+  padding: 4px 20px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.categorias-menu a:hover {
+  background-color: #068581;
+  color: white;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
+}

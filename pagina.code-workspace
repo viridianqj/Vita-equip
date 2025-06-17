@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../pagina"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "pagina",
+		"java.project.sourcePaths": []
+	}
+}
